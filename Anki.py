@@ -16,14 +16,15 @@ query_file_12 = open('d:\PrivateGIT\Word_frequency_in_a_book\sqls\part_12.txt', 
 query_file_13 = open('d:\PrivateGIT\Word_frequency_in_a_book\sqls\part_13.txt', 'r').read()
 
 
-conn = sqlite3.connect('AnkiCards16.db')
+conn = sqlite3.connect('AnkiCards19.db')
 conn.execute(query_file_01)
 conn.execute(query_file_02)
 conn.execute(query_file_03)
 conn.execute(query_file_04)
 conn.execute(query_file_05)
-conn.execute("INSERT INTO notes VALUES(1398130088495,'Ot0!xywPWG',1342697561419,1398130110,-1,0,'Bonjour�Hello','Bonjour',4077833205,0,0);")
-conn.execute("INSERT INTO notes VALUES(1398130111274,'OQxYbRc]Dm',1342697561419,1398130117,-1,0,'Merci�Thank you','Merci',1273459409,0,0);")
+conn.execute("INSERT INTO notes VALUES(1398130088495,'Ot0!xywPWG',1342697561419,1398130110,-1,'French','Bonjour�Hello','Bonjour',4077833205,0,'data');")
+conn.execute("INSERT INTO notes VALUES(1398130111274,'OQxYbRc]Dm',1342697561419,1398130117,-1,'French','Merci�Thank you','Merci',1273459409,0,'data');")
+
 
 
 conn.execute(query_file_08)
